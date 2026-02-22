@@ -6,9 +6,11 @@ chat:
   global-prefix: "!"
 
   formats:
-    # Доступные плейсхолдеры: %player%, %message%
+    # Доступные внутренние плейсхолдеры: %player%, %message%
+    # Если установлен PlaceholderAPI, можно использовать плейсхолдеры других плагинов: %vault_prefix%, %luckperms_prefix%, %player_world% и т.д.
     local: "<gray>[L]</gray> <white>%player%</white>: <yellow>%message%</yellow>"
     global: "<gold>[G]</gold> <white>%player%</white>: <white>%message%</white>"
 
   messages:
+    # В этом сообщении тоже работают PlaceholderAPI-плейсхолдеры (если PAPI установлен)
     no-listeners: "<red>Вас никто не услышал, нет игроков в радиусе %radius%м.</red>"

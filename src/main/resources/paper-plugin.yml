@@ -5,3 +5,8 @@ api-version: '1.21'
 authors:
   - nestren
 description: Локальный и глобальный чат для сервера Minecraft (Paper 1.21.4+)
+dependencies:
+  server:
+    PlaceholderAPI:
+      required: false
+      load: BEFORE
