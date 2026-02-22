@@ -1,0 +1,14 @@
+chat:
+  # Радиус локального чата в блоках
+  local-radius: 50
+
+  # Префикс для глобального чата
+  global-prefix: "!"
+
+  formats:
+    # Доступные плейсхолдеры: %player%, %message%
+    local: "<gray>[L]</gray> <white>%player%</white>: <yellow>%message%</yellow>"
+    global: "<gold>[G]</gold> <white>%player%</white>: <white>%message%</white>"
+
+  messages:
+    no-listeners: "<red>Вас никто не услышал, нет игроков в радиусе %radius%м.</red>"
